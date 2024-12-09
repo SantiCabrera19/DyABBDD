@@ -1,0 +1,7 @@
+Programabilidad
+TRIGGERS
+Cuando se produce un gasto mayor a $100.000, se debe registrar en una tabla “GASTOS_ALTOS” los datos de: empleado que lo realiza, para qué proyecto, fecha y monto.
+Al asignar como responsable de un producto a un analista se debe verificar que éste cuente con al menos dos años de experiencia, de lo contrario no permitir la asignación.
+RUTINAS ALMACENADAS
+Escribir un procedimiento que permita “cargar de una sola vez” los datos de Jefes de proyectos, Analistas y Programadores.
+Escribir una función que, dado el código de un proyecto, devuelva la cantidad de recursos asignados de éste.

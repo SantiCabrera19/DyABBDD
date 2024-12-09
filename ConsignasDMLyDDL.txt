@@ -1,0 +1,26 @@
+Para garantizar la obtención de resultados a las consultas se deberá hacer una carga masiva de datos, donde al menos una de las tablas (podría ser la de FASES) tenga al menos 2000 registros.
+
+INSERCIÓN, MODIFICACIÓN, BORRADO DE DATOS
+Una vez cargadas las tablas con datos, realizar a criterio del grupo:
+
+tres consultas distintas para inserción de datos,
+tres consultas distintas para modificación de datos,
+tres consultas sql distintas para borrado de filas.
+Las consultas pueden ser ejecutadas sobre una misma tabla o distintas, pero todas deben cumplir condiciones para ejecutarse (WHERE con evaluación de resultados de subconsultas).
+
+
+CONSULTAS SELECT
+Crear una vista mediante la cual la empresa pueda contar con un listado de los proyectos no finalizados aun, con la cantidad de fases realizadas, total de gastos, y cantidad de empleados asignados.
+
+El contador pidió tener los promedios de gastos que cada empleado efectúa en cada proyecto que participa. Crear una vista que provea esta información.
+
+Listar los Jefes de proyectos que mayor cantidad de horas dedicadas tienen.
+
+Nombre de los proyectos que generaron al menos tres productos distintos.
+
+Listar los nombres de los Analistas con más de cinco años de experiencia que nunca fueron asignados como responsables de productos de software de tipo “diagrama”.
+
+Listar los empleados (Informáticos) que hayan trabajado en todos los proyectos.
+
+MODIFICACIÓN DEL ESQUEMA
+Surge la posibilidad de que durante el desarrollo de un proyecto pueda cambiar de Jefe de proyecto, por lo que se necesita registrar la fecha en la que se lo asigna y en la que deja de ser Jefe de proyecto, permitiéndose además mantener un historial por si se lo vuelve a asignar posteriormente. Resolver estos nuevos requerimientos en la base de datos mediante las sentencias SQL necesarias, con las explicaciones correspondientes y puntos a tener en cuenta considerando los datos que ya están cargados.

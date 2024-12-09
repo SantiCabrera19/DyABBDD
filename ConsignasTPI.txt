@@ -1,0 +1,54 @@
+Consignas TPI
+Las etapas serán:
+Análisis y modelado del escenario
+Diseño físico de la base de datos
+Carga masiva de datos
+Consultas
+Administración
+Análisis del escenario: El escenario sobre el que los alumnos deberán trabajar está basado en una organización real propuesta por la Cátedra. Para el desarrollo del trabajo práctico deberán responderse las siguientes consignas:
+
+Leer el escenario en general.
+
+Analizar el escenario, estudiarlo detenidamente y plantear en papel a mano alzada un esquema DER. Preguntar sus dudas respecto de los elementos que se crean necesarios. En esta etapa se pueden realizar interconsultas sobre las distintas interpretaciones del escenario. Con esto se puede rápidamente llegar a un esquema básico.
+
+Los elementos que falten pueden crearse, pero deberá primar un criterio minimalista, es decir, no intentar poblar con entidades innecesariamente. Además de lo explícitamente enunciado anteriormente, pueden existir entidades que deban ser implementadas también y cuya existencia se desprende del análisis del escenario, pero no se busca que el diagrama sea compacto.
+
+Esquema conceptual:
+
+El resultado de esta etapa deberá ser un DER de la base de datos completa, de acuerdo a las notaciones vistas en el cursado, teniendo en cuenta principalmente:
+
+Nombres representativos de los conjuntos de entidades y conjuntos de vínculos.
+
+Asignación de atributos identificadores a las entidades.
+
+Restricciones de cardinalidad y claves en los conjuntos de vínculos.
+
+Otras restricciones que deban representarse, como nombres de roles, agregaciones, entidades débiles, jerarquías de clases (con sus propias restricciones).
+Detalle textual de requerimientos que no puedan ser representados en el diagrama y deban resolverse posteriormente como también aclaraciones sobre decisiones de modelado.
+Esquema físico: Tomando como entrada del DER resultante del modelado conceptual, se deberá realizar el esquema de la base de datos en el modelo relacional.
+
+Convertir las entidades y relaciones del DER a esquemas relacionales, según la metodología aprendida durante el cursado, utilizando las sentencias LDD de SQL necesarias. El resultado de esta estapa deberá ser un archivo script en formato .sql.
+
+Tener en cuenta:
+
+Nombres dados a las tablas/relaciones.
+
+Dominio de los atributos y opciones para los campos.
+
+Atributos de claves primarias y claves foráneas.
+
+Anotaciones del DER sobre restricciones a tratar en esta etapa o posteriores.
+Recomendaciones sobre los esquemas conceptual y físico
+
+Podrá utilizarse en estas instancias algún software o herramienta CASE para facilitar el modelado (en prácticas de la cátedra se utilizaron como ejemplos los software Dia o Draw.io para el desarrollo del DER). El esquema relacional podrá realizarse, con soporte de la cátedra, en MySQL Workbench si el SGBD es MySql Server.
+
+Implementación:
+
+Leer la documentación del SGBD (en cátedra se trabajó con el SGBD MySql) e identificar 5 (cinco) conceptos vistos en la unidad "Introducción a bases de datos" y describir cómo están implementados en el motor.
+Implementar las tablas y relaciones resultantes del modelo relacional en el SGBD elegido.
+
+Consultas SQL: Deberán resolverse los requerimientos sobre el escenario, que la cátedra entregará en su momento, mediante consultas efectuadas en el lenguaje SQL.
+
+Previo a la ejecución de las consultas deberá cargarse la base de datos con cierta cantidad de datos para que éstas tengan un resultado visible. Eventualmente y a elección de la cátedra se podrá entregar archivos para importación masiva de datos.
+
+Administración: La cátedra dará oportunamente las indicaciones de qué tareas administrativas deberán realizarse de acuerdo a lo que se llegue a desarrollar en el cursado.

@@ -1,0 +1,15 @@
+Para un volumen de transacciones diarias (1.200.000 inserciones aprox.) y una disponibilidad requerida de la base de datos (la carga de datos desde los clientes se hace constantemente, 24 horas al día), se
+implementó una política de backup soportada sobre un mecanismo de respaldo físico en caliente, con
+el fin de garantizar la menor pérdida de datos y su mayor disponibilidad, de acuerdo al tiempo que la
+aplicación debe estar en producción. Analizando la carga de la base de datos y las horas pico de consulta y transaccionalidad, se fijó como hora cero para backup, las 2:00 PM, ya que hacia las horas de
+la tarde la base de datos se encuentra con un nivel de carga bajo. Los intervalos de tiempo, en los cuales se hace el respaldo de los datos, son fijados de acuerdo al crecimiento en volumen de datos y el nivel de dinamismo que presenta la base de datos. Cuando se fija como política de respaldo el backup físico en línea, se corre el riesgo de provocar una caída en la base de datos, si no se garantiza espacio
+suficiente para el copiado de los archivos necesarios. Teniendo en cuenta lo anterior, se definió un esquema de respaldo con cintas diarias, realizando Full Backup de la base de datos los días lunes,
+miércoles y viernes, y backup de archivos de Log cada seis horas, eliminando estos archivos después
+de realizado el backup automáticamente, garantizando disponibilidad de espacio en disco para estos tipos de archivos. Se programó la toma del backup a través de tareas automáticas del sistema operativo,
+necesitando sólo la intervención del usuario, para el cambio de cinta y la validación de los backups. Se
+debe manejar un pool (conjunto) de doce (12) cintas, las cuales se deben intercambiar diariamente, rotándolas cada dos (2) semanas, es decir que se contará con el backup de las dos últimas semanas. Por
+fines prácticos y para evitar traumatismos en el proceso de intercambio de rotación de cintas, se fijó
+las doce del mediodía (12:00 PM), como la hora en que se debe realizar el intercambio de la cinta en
+el servidor, siguiendo la secuencia determinada. Este proceso se debe realizar todos los días de lunes a
+sábado y debe hacerlo la persona responsable de los backups. Por mantenimiento, confiabilidad y seguridad se recomienda cambiar el pool de cintas por unas nuevas cada seis meses. La Figura muestra
+el diagrama resultante de la esquematización de una estrategia de backup según el escenario planteado.

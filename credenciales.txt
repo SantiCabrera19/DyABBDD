@@ -1,0 +1,11 @@
+Programador:
+Usuario: prog_usuario
+Contraseña: Prog2024#
+
+Diseñador:
+Usuario: dis_usuario
+Contraseña: Dis2024#
+
+Administrador:
+Usuario: adm_usuario
+Contraseña: Adm2024#

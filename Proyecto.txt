@@ -1,0 +1,42 @@
+GESTIÓN DE PROYECTOS INFORMÁTICOS
+Una empresa de consultoría desea crear una base de datos para facilitar la
+gestión de los proyectos informáticos que desarrolla para sus empresas clientes.
+Los requisitos que hay que recoger se muestran a continuación:
+La empresa desarrolla proyectos de los que se almacena su código, nombre,
+cliente para el que se desarrolla el proyecto, una breve descripción, presupuesto,
+número de horas totales estimadas, fecha de inicio y fecha de fin. Cada proyecto
+se compone de una serie de fases identificadas por un número en secuencia en
+cada proyecto. Cada fase se caracteriza, además, por su nombre, fecha de
+comienzo, fecha de fin y estado en que se encuentra (en curso o finalizada).
+Los empleados de la empresa (código, DNI, nombre, dirección, titulación y
+años de experiencia) están asignados a los proyectos que desarrolla la empresa.
+Interesa almacenar los empleados que son jefes de proyecto junto con su
+dedicación total en horas prevista a cada proyecto así como el coste de su
+participación en euros, teniendo en cuenta que cada proyecto lo lidera un único
+jefe de proyecto. En cuanto a los informáticos que participan en los proyectos, se
+quiere conocer los que son analistas y los que son programadores, así como el
+número de horas totales previstas dedicadas en cada proyecto y el coste en euros
+que supone cada dedicación. De los programadores se almacenarán también los
+lenguajes en los que son expertos.
+En cada fase de un proyecto se generan una serie de productos (software,
+informes técnicos y prototipos) sobre los que se quiere guardar información.
+Cada producto previsto para una fase tiene un código, un nombre, una
+descripción, si está finalizado o no y tiene como responsable un analista.
+Además, la obtención de un producto puede abarcar varias fases de un proyecto
+y se quiere guardar los empleados informáticos involucrados en cada producto
+cuantificando el número de horas de trabajo dedicadas a cada producto teniendo
+en cuenta cada fase de un proyecto en la que se desarrolla. Para el software se
+almacena, además, su tipo (diagrama, programa, etc.) y para los prototipos su
+versión y su ubicación.
+Por otro lado, a cada fase de un proyecto le corresponde una serie de
+recursos de los que se quiere conocer su código identificador, nombre,
+descripción, tipo (Hw o Sw) así como el periodo de tiempo que se utilizan en
+cada fase.
+Cada empleado, en cada proyecto en el que trabaja, puede originar una serie
+de gastos (dietas, viajes, alojamiento, etc.) que se cargan a los proyectos. Cada
+gasto se caracteriza por un código único, una descripción, una fecha, un importe
+y el tipo de gasto.
+Por último, interesa conocer qué proyectos están relacionados con uno
+dado, es decir, cuáles son los proyectos que incluyen aspectos similares según
+distintas palabras clave (gestión de personal, gestión de stocks, etc.), con el fin
+de facilitar su desarrollo reutilizando algún componente

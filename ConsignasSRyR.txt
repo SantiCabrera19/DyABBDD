@@ -1,0 +1,22 @@
+Seguridad
+Este tema requiere la creación de cuentas de usuario, con asignación de políticas de seguridad y uso de recursos, y la asignación de privilegios. Deberán debatir en el grupo y fundamentar cada una de las tareas realizadas. Se pide:
+
+Crear tres cuentas de usuarios para que en la base de datos se pueda asignar cada una a tres usuarios distintos, cada uno de los cuales tiene que cumplir funciones de acuerdo a los siguientes perfiles:
+Programador
+
+Diseñador
+
+Administrador
+
+Fundamente y establezca las políticas utilizadas para nombres de los usuarios, host desde los que se pueden conectar, políticas de contraseñas, utilización de recursos.
+Debatir y fundamentar sobre los permisos necesarios para cada una de las cuentas creadas a fin de poder ejecutar las funciones propias de su perfil y realizar la asignación de los mismos.
+Probar mediante distintas acciones que las cuentas de usuarios se comportan de acuerdo a lo planificado. Hacer capturas de pantalla de las pruebas realizadas.
+Respaldo y recuperación
+Dado el escenario de ejemplo para un plan de backup disponible en la carpeta "Material complementario Eje 4 / Respaldo y recuperación", en el archivo "Respaldo y recuperación - ejemplo.odt".
+
+Tareas:
+
+Realizar un plan de respaldo y recuperación para la base de datos de la organización de su proyecto, basado en el ejemplo dado arriba y en el material bibliográfico "Seguridad - Backup.pdf".
+
+Cree en el SGBD una cuenta de usuario específica para realizar respaldos y restauraciones, asignándole los privilegios necesarios.
+Con la cuenta creada en el punto anterior realice un respaldo completo de acuerdo al plan definido en el punto a..
